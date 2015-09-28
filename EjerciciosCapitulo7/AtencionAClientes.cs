@@ -30,7 +30,10 @@ namespace EjerciciosCapitulo7
         private void Despacharbutton_Click(object sender, EventArgs e)
         {
            
-            SalidalistBox.Items.Add(fila.Dequeue());
+            
+                SalidalistBox.Items.Add(fila.Dequeue());
+            
+           
         }
     }
 }

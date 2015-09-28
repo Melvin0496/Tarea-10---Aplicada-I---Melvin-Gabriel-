@@ -18,11 +18,11 @@ namespace EjerciciosCapitulo7
             InitializeComponent();
             arreglo = new ArrayList();
         }
-
+        double total = 0;
         private void Calcularbutton_Click(object sender, EventArgs e)
         {
             double costo = Convert.ToDouble(CotostextBox.Text);
-            double total = 0;
+            
             arreglo.Sort();
             arreglo.Add(costo);
             
@@ -35,7 +35,7 @@ namespace EjerciciosCapitulo7
             }
             
             TotaltextBox.Text = total.ToString();
-            OrdenlistBox.Items.Add(costo);
+            OrdenlistBox.Items.Add(total);
             
             CotostextBox.Clear();
 
